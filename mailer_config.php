@@ -5,13 +5,13 @@
 */
 
 // SMTP server hostname (e.g. your cPanel mail server or Gmail)
-define('SMTP_HOST', 'easterncargo.co.in');   // or ssl://smtp.gmail.com etc.
+define('SMTP_HOST', 'SMTP_EMAIL');   // or ssl://smtp.gmail.com etc.
 
 // SMTP login username
-define('SMTP_USER', 'web@easterncargo.co.in');
+define('SMTP_USER', 'SMTP_USER');
 
 // SMTP login password (app-password if using Gmail/2FA)
-define('SMTP_PASS', 'K.qWcq_W.&~w');
+define('SMTP_PASS', 'SMTP_PASSWORD');
 
 // SMTP port
 //   587  = STARTTLS (recommended)
