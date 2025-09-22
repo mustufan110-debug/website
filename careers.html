@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Eastern Cargo Carriers (I) Private Limited</title>
+    <meta name="description" content="Join Eastern Cargo Carriers - India's premier healthcare logistics company. Explore career opportunities in Air Export Pricing, Ocean Export Pricing, and Business Development.">
+    <meta name="keywords" content="careers, jobs, Eastern Cargo, logistics careers, air export pricing, ocean export pricing, business development manager, healthcare logistics jobs">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+
+   <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+        .careers-hero {
+            background: linear-gradient(135deg, #f8f9fa 0%, #f8f9fa 100%);
+            color: white;
+            padding: 4em 0;
+            text-align: center;
+        }
+        
+        .careers-hero h1 {
+            font-size: 3em;
+            margin-bottom: 1em;
+            font-weight: 700;
+        }
+        
+        .careers-hero p {
+            font-size: 1.2em;
+            max-width: 37.5em; /* 600px -> 37.5em */
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .job-openings {
+            padding: 4em 0;
+            background: #f8f9fa;
+        }
+
+        /* New styles for the card container */
+        .job-cards-container {
+            display: flex;
+            gap: 2em; /* Creates space between cards */
+            align-items: stretch; /* Ensures cards are the same height */
+        }
+        
+        .job-card {
+            background: white;
+            border-radius: 0.625em; /* 10px -> 0.625em */
+            padding: 2.5em;
+            box-shadow: 0 0.3125em 0.9375em rgba(0,0,0,0.1); /* 5px 15px -> 0.3125em 0.9375em */
+            border-left: 0.3125em solid #fda403; /* 5px -> 0.3125em */
+            flex: 1; /* Allows cards to grow and fill the space */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .job-card .requirements-section:last-of-type {
+            margin-top: auto; /* Pushes the requirements to the bottom for alignment */
+        }
+        
+        .job-title {
+            color: #1a5f7a;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            font-weight: 600;
+        }
+        
+        .job-location {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+        
+        .job-description {
+            margin-bottom: 2em;
+        }
+        
+        .job-description p {
+            margin-bottom: 1em;
+            line-height: 1.7;
+        }
+        
+        .requirements-section {
+            margin-bottom: 2em;
+        }
+        
+        .requirements-section h4 {
+            color: #1a5f7a;
+            font-size: 1.3em;
+            margin-bottom: 1em;
+            font-weight: 600;
+        }
+        
+        .requirements-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .requirements-list li {
+            padding: 0.5em 0;
+            padding-left: 1.5em;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .requirements-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #fda403;
+            font-weight: bold;
+        }
+        
+        .apply-section {
+            background: #1a5f7a;
+            color: white;
+            padding: 3em 0;
+            text-align: center;
+        }
+        
+        .apply-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+        
+        .apply-section p {
+            font-size: 1.1em;
+            margin-bottom: 2em;
+            max-width: 37.5em; /* 600px -> 37.5em */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .email-links {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+        
+        .email-link {
+            background: #fda403;
+            color: white;
+            padding: 1em 2em;
+            border-radius: 0.3125em; /* 5px -> 0.3125em */
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+        
+        .email-link:hover {
+            background: #e6940a;
+            transform: translateY(-0.125em); /* -2px -> -0.125em */
+            box-shadow: 0 0.3125em 0.9375em rgba(0,0,0,0.2); /* 5px 15px -> 0.3125em 0.9375em */
+        }
+        
+        .company-info {
+            padding: 3em 0;
+            background: white;
+        }
+        
+        .company-info h2 {
+            text-align: center;
+            color: #1a5f7a;
+            margin-bottom: 2em;
+        }
+        
+        .company-info p {
+            text-align: center;
+            max-width: 50em; /* 800px -> 50em */
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        /* Media query for tablet and smaller screens */
+        @media (max-width: 62em) { /* 992px -> 62em */
+            .job-cards-container {
+                flex-direction: column; /* Stack cards vertically */
+            }
+        }
+        
+        @media (max-width: 48em) { /* 768px -> 48em */
+            .careers-hero h1 {
+                font-size: 2em;
+            }
+            
+            .job-card {
+                padding: 1.5em;
+            }
+            
+            .email-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .apply-section h2 {
+                font-size: 2em;
+            }
+        }
+</style>
+</head>
+<body>
+
+        <!-- Top Contact Bar -->
+    <div class="top-bar" role="banner" aria-label="Contact Information">
+        <div class="container">
+            <div class="top-bar-left">
+                <div class="contact-info">
+                    <a href="mailto:info@easterncargo.co.in"><span><i class="fas fa-envelope"></i>info@easterncargo.co.in</a></span>
+                    <a href="mailto:lseth@easterncargo.co.in"><span><i class="fas fa-envelope"></i>lseth@easterncargo.co.in</a></span>
+                    <a href="tel:+91-22-67539999"><span><i class="fas fa-phone"></i>+91-22-67539999</a></span>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <div class="language-selector" tabindex="0" role="button" aria-haspopup="true">
+                    <span><i class="fas fa-flag"></i> EN <i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/easterncargo"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/easterncargo"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/eastern-cargo-carriers-i-pvt-ltd"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.php#home" class="nav-logo-link">
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <img src="images/logo.png" alt="Eastern Cargo Logo" class="logo-image">
+                    </div>
+                    <div class="logo-text">
+                        <div class="company-name">
+                            <span class="company-main">EASTERN CARGO</span><br>
+                            <span class="company-sub">CARRIERS (I) PVT.LTD</span>
+                        </div>
+                    </div>
+                </div></a>
+                
+                <!-- Desktop Menu -->
+                <ul class="nav-menu desktop-menu">
+                    <li class="nav-item">
+                        <a href="index.php#about" class="nav-link" data-translate="ABOUT US">ABOUT US</a>
+                    </li>                        
+                    <li class="nav-item dropdown" >
+                        <a href="#" class="nav-link" data-translate="OUR SERVICES">OUR SERVICES <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="air-freight-services.html" data-translate="Air Freight">Air Freight</a></li>
+                            <li><a href="ocean-freight-services.html" data-translate="Ocean Freight">Ocean Freight</a></li>
+                            <li><a href="customs-clearance-services.html" data-translate="Customs Brokerage">Customs Brokerage</a></li>
+                            <li><a href="warehouse-distribution-services.html" data-translate="Warehouse & Distribution">Warehouse & Distribution</a></li>
+                            <li><a href="air-charter-services.html" data-translate="Air Charter">Air Charter</a></li>
+                            <li><a href="pet-transport-services.html" data-translate="Your Pet Pal">Your Pet Pal</a></li>
+                            <li><a href="unaccompanied-baggage-shipping.html" data-translate="Unaccompanied Baggage Shipping">Unaccompanied Baggage Shipping</a></li>
+                            <!--<li><a href="human_remains.html" data-translate="Human Remains">Human Remains</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                       <a href="#" class="nav-link" data-translate="SPECIALIZED SERVICES">SPECIALIZED SERVICES<i class="fas fa-chevron-down"></i></a>
+                       <ul class="dropdown-menu">
+                        <li><a href="express-logistics-services.html" data-translate="Express Logistics">Express Logistics</a></li>
+                        <li><a href="healthcare-logistics.html" data-translate="Healthcare Logistics">Healthcare Logistics</a></li>
+                        <li><a href="dgr-shipments.html" data-translate="DG Shipments">DG Shipments</a></li>
+                        <li><a href="project-logistics.html" data-translate="Project Logistics">Project Logistics</a></li>
+                       </ul>
+                    </li>
+
+                    <li class="nav-item dropdown" >
+                        <a href="#" class="nav-link" data-translate="MORE">MORE <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="teams.html" data-translate="Our Team">Our Team</a></li>
+                            <li><a href="index.php#testimonial-section" data-translate="Customer Reviews">Customer Reviews</a></li>
+                            <li><a href="index.php#calculator" data-translate="Calculator">Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link" data-translate="CONTACT US">CONTACT US</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-contact">
+                    <div class="contact-bubble">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="contact-text">
+                        <span data-translate="Have any Questions?">Have any Questions?</span>
+                        <a href="mailto:info@easterncargo.co.in">info@easterncargo.co.in</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay">
+                <div class="mobile-menu-content">
+                    <div class="mobile-menu-header">
+                        <!--<div class="mobile-logo">
+                            <img src="images/logo.png" alt="Eastern Cargo Logo">
+                            <span>EASTERN CARGO</span>
+                        </div>
+                        <button class="mobile-menu-close">
+                            <i class="fas fa-times"></i>
+                        </button>-->
+                    </div>
+                    
+                    <ul class="mobile-menu">
+                        <li class="mobile-menu-item">
+                            <a href="index.php#home" class="mobile-menu-link" data-translate="HOME">HOME</a>
+                        </li>
+                        
+                        <li class="mobile-menu-item">
+                            <a href="index.php#about" class="mobile-menu-link" data-translate="ABOUT US">ABOUT US</a>
+                        </li>
+                        
+                        <li class="mobile-menu-item has-submenu">
+                            <a href="#" class="mobile-menu-link mobile-submenu-toggle" data-translate="OUR SERVICES">OUR SERVICES <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-submenu">
+                                <li><a href="air-freight-services.html" data-translate="Air Freight">Air Freight</a></li>
+                                <li><a href="ocean-freight-services.html" data-translate="Ocean Freight">Ocean Freight</a></li>
+                                <li><a href="customs-clearance-services.html" data-translate="Customs Brokerage">Customs Brokerage</a></li>
+                                <li><a href="warehouse-distribution-services.html" data-translate="Warehouse & Distribution">Warehouse & Distribution</a></li>
+                                <li><a href="air-charter-services.html" data-translate="Air Charter">Air Charter</a></li>
+                                <li><a href="pet-transport-services.html" data-translate="Your Pet Pal">Your Pet Pal</a></li>
+                                <li><a href="unaccompanied-baggage-shipping.html" data-translate="Unaccompanied Baggage Shipping">Unaccompanied Baggage Shipping</a></li>
+                                <!--<li><a href="human_remains.html" data-translate="Human Remains">Human Remains</a></li>-->
+                            </ul>
+                        </li>
+                        
+                        <li class="mobile-menu-item has-submenu">
+                            <a href="#" class="mobile-menu-link mobile-submenu-toggle" data-translate="SPECIALIZED SERVICES">SPECIALIZED SERVICES <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-submenu">
+                                <li><a href="express-logistics-services.html" data-translate="Express Logistics">Express Logistics</a></li>
+                                <li><a href="healthcare-logistics.html" data-translate="Healthcare Logistics">Healthcare Logistics</a></li>
+                                <li><a href="dgr-shipments.html" data-translate="DG Shipments">DG Shipments</a></li>
+                                <li><a href="project-logistics.html" data-translate="Project Logistics">Project Logistics</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="mobile-menu-item has-submenu">
+                            <a href="#" class="mobile-menu-link mobile-submenu-toggle" data-translate="MORE">MORE <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="mobile-submenu">
+                                <li><a href="teams.html" data-translate="Our Team">Our Team</a></li>
+                                <li><a href="index.php#testimonial-section" data-translate="Customer Reviews">Customer Reviews</a></li>
+                                <li><a href="index.php#calculator" data-translate="Calculator">Calculator</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="mobile-menu-item">
+                            <a href="#footer" class="mobile-menu-link" data-translate="CONTACT US">CONTACT US</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="mobile-menu-footer">
+                        <div class="mobile-contact">
+                            <p data-translate="Have any Questions?">Have any Questions?</p>
+                            <a href="mailto:info@easterncargo.co.in">info@easterncargo.co.in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pharma Logistics Section -->
+    <section class="careers-hero">
+        <div class="container">
+            <h1 style="color: #fda403;">Join Our Team</h1>
+            <p style="color: #1a5f7a;">Be part of India's premier healthcare logistics company with 45+ years of excellence. Explore exciting career opportunities and grow with us.</p>
+        </div>
+    </section>
+
+    <section class="job-openings">
+        <div class="container">
+            <h2 style="text-align: center; color: #fda403; margin-bottom: 3rem; font-size: 2.5rem;">Current Openings</h2>
+
+            <div class="job-cards-container">
+            
+                <div class="job-card">
+                    <h3 class="job-title">Air Export Pricing Executive</h3>
+                    <div class="job-location">
+                        📍 Mumbai, Maharashtra
+                    </div>
+                    
+                    <div class="job-description">
+                        <p>We are seeking a dynamic and experienced Air Export Pricing Executive to join our team. The ideal candidate will be responsible for managing air freight pricing, negotiating with airlines, and ensuring competitive rates for our clients.</p>
+                    </div>
+                    
+                    <div class="requirements-section">
+                        <h4>Key Responsibilities:</h4>
+                        <ul class="requirements-list">
+                            <li>Prepare competitive air freight quotations for export shipments</li>
+                            <li>Negotiate rates with airlines and consolidators</li>
+                            <li>Monitor market trends and pricing strategies</li>
+                            <li>Maintain relationships with airline partners</li>
+                            <li>Coordinate with operations team for shipment execution</li>
+                            <li>Ensure compliance with IATA regulations</li>
+                            <li>Handle special cargo pricing (DG, perishables, etc.)</li>
+                            <li>Provide pricing support to sales team</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirements-section">
+                        <h4>Requirements:</h4>
+                        <ul class="requirements-list">
+                            <li>Bachelor's degree in Logistics, Supply Chain, or related field</li>
+                            <li>Minimum 3-5 years of experience in air freight pricing</li>
+                            <li>Strong knowledge of IATA regulations and procedures</li>
+                            <li>Excellent negotiation and communication skills</li>
+                            <li>Proficiency in MS Office and logistics software</li>
+                            <li>Ability to work under pressure and meet deadlines</li>
+                            <li>Knowledge of international trade and customs procedures</li>
+                            <li>Experience with dangerous goods pricing preferred</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <h3 class="job-title">Ocean Export Pricing Executive</h3>
+                    <div class="job-location">
+                        📍 Mumbai, Maharashtra
+                    </div>
+                    
+                    <div class="job-description">
+                        <p>Join our team as an Ocean Export Pricing Executive and play a crucial role in managing ocean freight pricing for our export operations. You will be responsible for securing competitive rates and maintaining strong relationships with shipping lines.</p>
+                    </div>
+                    
+                    <div class="requirements-section">
+                        <h4>Key Responsibilities:</h4>
+                        <ul class="requirements-list">
+                            <li>Prepare ocean freight quotations for FCL and LCL shipments</li>
+                            <li>Negotiate rates with shipping lines and NVOCCs</li>
+                            <li>Monitor container availability and market conditions</li>
+                            <li>Coordinate with port operations and customs clearance</li>
+                            <li>Handle project cargo and break-bulk pricing</li>
+                            <li>Ensure compliance with IMO regulations</li>
+                            <li>Manage rate contracts with shipping partners</li>
+                            <li>Provide competitive pricing for healthcare logistics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirements-section">
+                        <h4>Requirements:</h4>
+                        <ul class="requirements-list">
+                            <li>Bachelor's degree in Maritime Studies, Logistics, or related field</li>
+                            <li>Minimum 3-5 years of experience in ocean freight pricing</li>
+                            <li>Strong knowledge of shipping lines and port operations</li>
+                            <li>Understanding of FCL/LCL operations and container types</li>
+                            <li>Excellent analytical and negotiation skills</li>
+                            <li>Proficiency in shipping software and MS Office</li>
+                            <li>Knowledge of international maritime regulations</li>
+                            <li>Experience with pharmaceutical and healthcare cargo preferred</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <h3 class="job-title">Business Development Manager</h3>
+                    <div class="job-location">
+                        📍 Mumbai, Maharashtra
+                    </div>
+                    
+                    <div class="job-description">
+                        <p>We are looking for an experienced Business Development Manager to drive growth and expand our market presence in the healthcare logistics sector. The ideal candidate will identify new business opportunities and build strategic partnerships.</p>
+                    </div>
+                    
+                    <div class="requirements-section">
+                        <h4>Key Responsibilities:</h4>
+                        <ul class="requirements-list">
+                            <li>Identify and pursue new business opportunities in healthcare logistics</li>
+                            <li>Develop and maintain relationships with pharmaceutical companies</li>
+                            <li>Create and present business proposals to potential clients</li>
+                            <li>Conduct market research and competitive analysis</li>
+                            <li>Collaborate with operations team to ensure service delivery</li>
+                            <li>Attend industry conferences and networking events</li>
+                            <li>Develop strategic partnerships with healthcare organizations</li>
+                            <li>Monitor industry trends and regulatory changes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirements-section">
+                        <h4>Requirements:</h4>
+                        <ul class="requirements-list">
+                            <li>MBA in Marketing, Business Administration, or related field</li>
+                            <li>Minimum 5-7 years of experience in business development</li>
+                            <li>Strong background in healthcare or pharmaceutical industry</li>
+                            <li>Excellent presentation and communication skills</li>
+                            <li>Proven track record of meeting sales targets</li>
+                            <li>Strong networking and relationship-building abilities</li>
+                            <li>Knowledge of healthcare logistics and regulatory requirements</li>
+                            <li>Willingness to travel for client meetings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eastern Cargo Carriers (I) Pvt.Ltd. </h3>
+
+
+                      <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                              <a href="tel:+91-22-67539999">+91-22-67539999</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                               <a href="mailto:info@easterncargo.co.in">info@easterncargo.co.in</a><br>
+                               <a href="mailto:lseth@easterncargo.co.in">lseth@easterncargo.co.in</a></div>
+                        </div>
+
+                         <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                              <span><a href="https://www.google.com/maps/place/EASTERN+CARGO+CARRIERS+(I)+PVT.LTD/@19.1063814,72.8580718,21z/data=!4m6!3m5!1s0x3be7c8443fffffff:0xed6596139eab52fa!8m2!3d19.1063333!4d72.8580194!16s%2Fg%2F1tf68j6_?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D">
+                                Unit #25/26/27, Adarsh Industrial Estate,
+                                Sahar Road, Chakala, Andheri (East),
+                                Mumbai – 400 099</a></span>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="Quick Links">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.php#about" title="About Us" data-translate="About Us">About Us</a></li>
+                        <li><a href="index.php#career-contact" title="Build your career with Eastern Cargo Carriers – explore exciting opportunities today." data-translate="Careers">Careers</a></li>
+                        <li><a href="teams.html" title="Meet our experienced team across India" data-translate="Our Team">Our Team</a></li>
+                        <li><a href="index.php#services" title="Wide variety of logistics services" data-translate="Our Services">Our Services</a></li>
+                        <li><a href="index.php#testimonial-section" title="Trusted experiences shared by our customers." data-translate="Client Reviews">Client Reviews</a></li>
+                        <li><a href="useful-links.html" title="Certificates & Policies" data-translate="Certificates & Policies">Certificates & Policies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="Specialized Services">Specialized Services</h3>
+                    <ul>
+                        <li><a href="express-logistics-services.html" title="Express Logistics" data-translate="Express Logistics">Express Logistics</a></li>
+                        <li><a href="healthcare-logistics.html" title="Healthcare Logistics" data-translate="Healthcare Logistics">Healthcare Logistics</a></li>
+                        <li><a href="dgr-shipments.html" title="DG Shipments" data-translate="DG Shipments">DG Shipments</a></li>
+                        <li><a href="project-logistics.html" title="Project Logistics" data-translate="Project Logistics">Project Logistics</a></li>
+                    </ul>
+                </div>
+
+                    <!-- ✅ New Map Section -->
+                         <div class="footer-section">
+                           <h3 data-translate="Find Us">Find Us</h3>
+                            <div class="map-container1">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.62691720178867!2d72.85800062453691!3d19.10631017311058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8443fffffff%3A0xed6596139eab52fa!2sEASTERN%20CARGO%20CARRIERS%20(I)%20PVT.LTD!5e0!3m2!1sen!2sin!4v1756098172807!5m2!1sen!2sin" 
+                                   width="600" 
+                                   height="450" 
+                                   style="border:0;" 
+                                   allowfullscreen="" 
+                                   loading="lazy" 
+                                   referrerpolicy="no-referrer-when-downgrade">
+                              </iframe>
+                            </div>
+                         </div>               
+            </div>
+
+                <div class="social-links">
+                    <span data-translate="Follow us :">Follow us :</span>
+                    <a href="https://www.facebook.com/easterncargo"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/easterncargo"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/eastern-cargo-carriers-i-pvt-ltd"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Copyright 2025. All Rights Reserved by Eastern Cargo Carriers (I) Pvt.Ltd</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Selector Modal -->
+    <div id="languageModal" class="language-modal">
+        <div class="language-modal-content">
+            <div class="language-modal-header">
+                <h3>Select Language</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="language-options">
+                <div class="language-option" data-lang="en">
+                    <img src="https://flagcdn.com/w20/gb.png" alt="English">
+                    <span>English</span>
+                </div>
+                <div class="language-option" data-lang="es">
+                    <img src="https://flagcdn.com/w20/es.png" alt="Spanish">
+                    <span>Español</span>
+                </div>
+                <div class="language-option" data-lang="fr">
+                    <img src="https://flagcdn.com/w20/fr.png" alt="French">
+                    <span>Français</span>
+                </div>
+                <div class="language-option" data-lang="de">
+                    <img src="https://flagcdn.com/w20/de.png" alt="German">
+                    <span>Deutsch</span>
+                </div>
+                <div class="language-option" data-lang="zh">
+                    <img src="https://flagcdn.com/w20/cn.png" alt="Chinese">
+                    <span>中文</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Include jQuery -->
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="captcha.js"></script>
+    <script src="script.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+
+
+</body>
+</html>
