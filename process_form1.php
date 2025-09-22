@@ -86,15 +86,14 @@ try {
     $mail->Port       = SMTP_PORT;
 
     // === EMAIL 1: SEND NOTIFICATION TO COMPANY ===
-    $mail->setFrom(SMTP_USER, 'Eastern Cargo Website');
-    //$mail->addAddress('info@easterncargo.co.in');
-    //$mail->addAddress('lseth@easterncargo.co.in');
-    $mail->addAddress('it@easterncargo.co.in');
-    $mail->addAddress('kferreira@easterncargo.co.in');
+    $mail->setFrom(SMTP_USER, 'NAME Website');
+    $mail->addAddress('Your Email address where you want to send mail');
+    //$mail->addAddress('Your Email address where you want to send mail');
+    //$mail->addAddress('Your Email address where you want to send mail');
+    //$mail->addAddress('Your Email address where you want to send mail');
     $mail->addReplyTo($email, $name);
     
     $mail->isHTML(true);
-    $mail->CharSet = 'UTF-8'; //
     $mail->Subject = "New {$formType} submission from your website";
     $body = "<h2>New " . ucfirst($formType) . " Request</h2>
              <p><strong>Name:</strong> {$name}</p>
